@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page">
+  <a href="/dashboard" class="back-link">← Back to Dashboard</a>
+  <div class="page-head">
+    <h1>Mood Tracker</h1>
+    <p>How are you feeling today?</p>
+  </div>
+  <div class="row">
+    {% for m,e in [('Happy','😊'),('Sad','😢'),('Angry','😠'),('Calm','😌'),('Stressed','😰')] %}
+      <div class="tag" data-mood="{{m}}" style="font-size:18px;padding:14px 22px">{{e}} {{m}}</div>
+    {% endfor %}
+  </div>
+  <div style="max-width:680px;margin:0 auto">
+    <div id="mood-result" class="result glass" style="text-align:center">
+      <h3>Pick a mood</h3>
+      <p style="margin-top:8px;color:#647089">We'll suggest a small action to help you feel your best.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page">
+  <a href="/dashboard" class="back-link">← Back to Dashboard</a>
+  <div class="page-head">
+    <h1>Women Health & Wellness</h1>
+    <p>Holistic guidance for every stage — from cycle care to motherhood and beyond.</p>
+  </div>
+  <div class="card-grid">
+    {% set items = [
+      ('🌸','PCOD Awareness','Understand symptoms, lifestyle changes and nutrition that help manage PCOD effectively.'),
+      ('🩷','Period Health','Cycle tracking tips, pain relief, and what to eat during your period.'),
+      ('🤰','Pregnancy Wellness','Trimester-wise care, prenatal exercises, and nutritional must-haves.'),
+      ('💗','Hormonal Health','Balance hormones with sleep, stress management and the right foods.'),
+      ('🥗','Nutrition Tips','Iron, calcium, folate and protein rich choices for women.'),
+      ('🧖‍♀️','Self-Care','Skincare, mental wellness rituals, and rest as medicine.')
+    ] %}
+    {% for e,t,d in items %}
+      <div class="info-card glass"><span class="emoji">{{e}}</span><h3>{{t}}</h3><p>{{d}}</p></div>
+    {% endfor %}
+  </div>
+  <div class="result glass" style="margin-top:30px">
+    <h3>💡 Tip of the Day</h3>
+    <p style="margin-top:8px;color:#3d527a">Drink warm water with lemon in the morning to support digestion and hormonal balance.</p>
+  </div>
+</section>
+{% endblock %}

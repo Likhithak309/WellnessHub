@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %}Dashboard — WellnessHub{% endblock %} {% block content %}
+<section class="dash">
+    <div class="welcome">
+        <h1>Welcome {{ username }}</h1>
+        <p>Your personal preventive healthcare hub</p>
+    </div>
+
+    <div class="feature-grid">
+        {% set features = [ ('symptom-checker','🩺','AI Symptom Checker','Get instant guidance for common symptoms.'), ('women-health','🌸','Women Health','PCOD, period, pregnancy & hormonal wellness.'), ('mood-tracker','😊','Mood Tracker','Track feelings and
+        get tailored suggestions.'), ('breathing','🌬️','Breathing Exercises','Guided inhale-exhale sessions for calm.'), ('emergency','🚨','Emergency Guidance','CPR, first aid & helpline information.'), ('wellness','🌿','Daily Wellness','Routines, nutrition
+        & lifestyle tips.'), ('hospitals','🏥','Nearby Hospitals','Find hospitals around your location.'), ('fitness','💪','Fitness Tips','Workouts, stretches & BMI guidance.'), ('water','💧','Water Reminder','Track and improve daily hydration.'), ('sleep','🌙','Sleep
+        Monitor','Sleep quality, tips and statistics.') ] %} {% for key,icon,title,desc in features %}
+        <a href="/feature/{{ key }}" class="feature-card glass">
+            <div class="icon">{{ icon }}</div>
+            <h3>{{ title }}</h3>
+            <p>{{ desc }}</p>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

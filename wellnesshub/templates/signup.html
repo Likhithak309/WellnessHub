@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}Sign Up — WellnessHub{% endblock %} {% block content %}
+<div class="auth-wrap">
+    <div class="auth-card glass">
+        <h2>Create Account</h2>
+        <p class="sub">Begin your wellness journey today</p>
+        <form id="signup-form">
+            <div class="field"><label>Username</label><input name="username" required></div>
+            <div class="field"><label>Email</label><input type="email" name="email" required></div>
+            <div class="field"><label>Password</label><input type="password" name="password" required minlength="6"></div>
+            <button type="submit" class="btn">Create Account</button>
+            <div id="auth-msg" class="auth-msg"></div>
+        </form>
+        <div class="auth-foot">
+            <a href="/login"><button type="button" class="btn ghost small" style="margin-top:14px">Login if already registered</button></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

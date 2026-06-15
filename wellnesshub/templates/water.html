@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page">
+  <a href="/dashboard" class="back-link">← Back to Dashboard</a>
+  <div class="page-head">
+    <h1>Water Reminder</h1>
+    <p>Daily goal: 8 glasses. Stay refreshed, focused, and healthy.</p>
+  </div>
+  <div class="water-stage glass" style="max-width:520px;margin:0 auto;padding:30px">
+    <div class="glasses">💧</div>
+    <div id="water-count" style="font-size:22px;font-weight:700">0 / 8 glasses</div>
+    <div class="progress"><div id="water-bar"></div></div>
+    <div class="row">
+      <button id="water-btn" class="btn">+ Drink a Glass</button>
+      <button id="water-reset" class="btn ghost">Reset</button>
+    </div>
+    <p style="color:#647089;margin-top:10px">Hydration reminders help focus, skin and digestion.</p>
+  </div>
+</section>
+{% endblock %}

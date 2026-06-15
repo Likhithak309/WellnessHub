@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page">
+  <a href="/dashboard" class="back-link">← Back to Dashboard</a>
+  <div class="page-head">
+    <h1>Emergency Guidance</h1>
+    <p>Quick-reference cards for critical moments. Always call emergency services first.</p>
+  </div>
+  <div class="card-grid">
+    <div class="info-card glass"><span class="emoji">❤️</span><h3>CPR Steps</h3><p>1. Check responsiveness. 2. Call help. 3. 30 chest compressions (100-120/min). 4. 2 rescue breaths. Repeat.</p></div>
+    <div class="info-card glass"><span class="emoji">💔</span><h3>Heart Attack</h3><p>Chew aspirin (if not allergic), sit upright, loosen clothing, call ambulance immediately.</p></div>
+    <div class="info-card glass"><span class="emoji">🩹</span><h3>First Aid - Bleeding</h3><p>Apply firm pressure with clean cloth, elevate the limb, do not remove embedded objects.</p></div>
+    <div class="info-card glass"><span class="emoji">🔥</span><h3>Burns</h3><p>Cool under running water 20 min, cover loosely with cling film, do not apply ice or butter.</p></div>
+    <div class="info-card glass"><span class="emoji">🌡️</span><h3>High Fever</h3><p>Sponge with lukewarm water, hydrate, paracetamol per label. Seek help if >103°F.</p></div>
+    <div class="info-card glass"><span class="emoji">🚑</span><h3>Helplines (India)</h3><p>Emergency: <b>112</b><br>Ambulance: <b>108</b><br>Women: <b>1091</b><br>Mental Health: <b>9152987821</b></p></div>
+  </div>
+  <div class="row" style="margin-top:30px">
+    <a href="tel:112" class="btn">📞 Call 112</a>
+    <a href="tel:108" class="btn ghost">🚑 Call Ambulance 108</a>
+  </div>
+</section>
+{% endblock %}

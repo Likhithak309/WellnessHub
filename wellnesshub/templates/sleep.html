@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page">
+  <a href="/dashboard" class="back-link">← Back to Dashboard</a>
+  <div class="page-head">
+    <h1>Sleep Monitor</h1>
+    <p>Better sleep, better life. Track quality and improve nightly habits.</p>
+  </div>
+  <div class="stat-grid" style="max-width:760px;margin:0 auto 30px">
+    <div class="stat glass"><div class="v">7.5h</div><div class="l">Last Night</div></div>
+    <div class="stat glass"><div class="v">88%</div><div class="l">Quality</div></div>
+    <div class="stat glass"><div class="v">11:20</div><div class="l">Bedtime</div></div>
+    <div class="stat glass"><div class="v">6:50</div><div class="l">Wake Up</div></div>
+  </div>
+  <div class="card-grid">
+    <div class="info-card glass"><span class="emoji">🌙</span><h3>Bedtime Reminder</h3><p>Aim for the same bedtime daily — your body loves rhythm.</p></div>
+    <div class="info-card glass"><span class="emoji">📖</span><h3>Wind Down</h3><p>Read, journal, or stretch 30 min before bed instead of scrolling.</p></div>
+    <div class="info-card glass"><span class="emoji">🍵</span><h3>Relaxation</h3><p>Chamomile tea, warm shower, dim lighting prepare your body for sleep.</p></div>
+    <div class="info-card glass"><span class="emoji">🌡️</span><h3>Environment</h3><p>Cool (18-20°C), dark, and quiet bedroom for deep sleep.</p></div>
+  </div>
+</section>
+{% endblock %}

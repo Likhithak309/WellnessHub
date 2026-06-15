@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page">
+  <a href="/dashboard" class="back-link">← Back to Dashboard</a>
+  <div class="page-head">
+    <h1>AI Symptom Checker</h1>
+    <p>Describe what you're feeling. Get gentle, AI-guided suggestions instantly.</p>
+  </div>
+  <div class="symptom-box glass">
+    <div style="text-align:center;font-size:60px;margin-bottom:10px">🩺</div>
+    <input id="symptom-input" placeholder="e.g. fever, headache, anxiety..." />
+    <div style="text-align:center"><button id="analyze-btn" class="btn">Analyze →</button></div>
+    <div class="row">
+      {% for s in ['Fever','Cold','Cough','Headache','Stress','Anxiety','Stomach Pain','Diabetes'] %}
+        <span class="tag" data-quick="{{ s }}">{{ s }}</span>
+      {% endfor %}
+    </div>
+    <div id="symptom-result"></div>
+    <div class="disclaimer">⚠️ This tool provides general guidance only and is not a substitute for professional medical advice.</div>
+    <div style="text-align:center;margin-top:18px"><a href="/feature/women-health" class="btn ghost small">Next: Women Health →</a></div>
+  </div>
+</section>
+{% endblock %}

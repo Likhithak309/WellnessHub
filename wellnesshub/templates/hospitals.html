@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page">
+  <a href="/dashboard" class="back-link">← Back to Dashboard</a>
+  <div class="page-head">
+    <h1>Nearby Hospitals</h1>
+    <p>Find care close to you. We'll request your location to show relevant options.</p>
+  </div>
+  <div style="text-align:center;margin-bottom:20px">
+    <button id="locate-btn" class="btn">📍 Detect My Location</button>
+    <p id="loc-out" style="margin-top:12px;color:#647089"></p>
+  </div>
+  <div class="map-ph glass" style="margin-bottom:24px">🗺️ Interactive Map Preview</div>
+  <div class="card-grid">
+    <div class="info-card glass"><span class="emoji">🏥</span><h3>City General Hospital</h3><p>Multi-specialty · 24/7 emergency · 2.3 km away</p><a href="tel:108" class="btn small" style="margin-top:10px">Call Ambulance</a></div>
+    <div class="info-card glass"><span class="emoji">🏥</span><h3>Apollo Care Center</h3><p>Cardiology & Maternity · 3.8 km away</p><a href="tel:108" class="btn small" style="margin-top:10px">Navigate</a></div>
+    <div class="info-card glass"><span class="emoji">🏥</span><h3>Wellness Multispeciality</h3><p>General medicine · Pharmacy · 4.1 km away</p><a href="tel:108" class="btn small" style="margin-top:10px">Get Directions</a></div>
+  </div>
+</section>
+{% endblock %}

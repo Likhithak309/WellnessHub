@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page">
+  <a href="/dashboard" class="back-link">← Back to Dashboard</a>
+  <div class="page-head">
+    <h1>Breathing Exercises</h1>
+    <p>Follow the circle. Inhale as it grows, exhale as it shrinks. Sessions cycle every 4 seconds.</p>
+  </div>
+  <div class="breath-stage">
+    <div id="breath-circle" class="breath-circle"><span id="breath-label">Ready</span></div>
+    <button id="breath-start" class="btn">Start Session</button>
+  </div>
+  <div class="card-grid" style="max-width:900px;margin:0 auto">
+    <div class="info-card glass"><span class="emoji">🧘</span><h3>Box Breathing</h3><p>4s inhale · 4s hold · 4s exhale · 4s hold. Repeat 4 times for instant calm.</p></div>
+    <div class="info-card glass"><span class="emoji">🌬️</span><h3>4-7-8 Technique</h3><p>Inhale 4s, hold 7s, exhale 8s — great before sleep.</p></div>
+    <div class="info-card glass"><span class="emoji">💆</span><h3>Mindful Pause</h3><p>Close your eyes, notice 5 sensations, take 3 deep breaths.</p></div>
+  </div>
+</section>
+{% endblock %}
