@@ -4,7 +4,7 @@ import sqlite3, os
 
 app = Flask(__name__)
 app.secret_key = "wellnesshub-secret-key-change-me"
-DB = os.path.join(os.path.dirname(__file__), "sanjeevani.db")
+DB = os.path.join(os.path.dirname(__file__), "wellness.db")
 
 
 def db():
