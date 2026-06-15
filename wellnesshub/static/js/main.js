@@ -1,4 +1,4 @@
-// Sanjeevani AI - shared JS
+// WellnessHub - shared JS
 
 async function postJSON(url, body) {
     const r = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
